@@ -166,7 +166,7 @@
         <!-- To make this form functional, sign up at-->
         <!-- https://startbootstrap.com/solution/contact-forms-->
         <!-- to get an API token!-->
-        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+        <form id="contactForm" action="https://formspree.io/f/mzbqlvjg" method="POST">
           <div class="row align-items-stretch mb-5">
             <div class="col-md-6">
               <div class="form-group">
@@ -174,6 +174,7 @@
                 <input
                   class="form-control"
                   id="name"
+                  name="name"
                   type="text"
                   placeholder="Your Name *"
                   data-sb-validations="required"
@@ -188,6 +189,7 @@
                   class="form-control"
                   id="email"
                   type="email"
+                  name="email"
                   placeholder="Your Email *"
                   data-sb-validations="required,email"
                 />
@@ -204,6 +206,7 @@
                   class="form-control"
                   id="phone"
                   type="tel"
+                  name="phone"
                   placeholder="Your Phone *"
                   data-sb-validations="required"
                 />
@@ -251,7 +254,7 @@
           <!-- Submit Button-->
           <div class="text-center">
             <button
-              class="btn btn-primary btn-xl text-uppercase disabled"
+              class="btn btn-primary btn-xl text-uppercase"
               id="submitButton"
               type="submit"
             >
